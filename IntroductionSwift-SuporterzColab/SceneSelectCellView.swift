@@ -8,6 +8,7 @@
 
 import UIKit
 
+/// シーン選択テーブルセルのView
 class  SceneSelectCellView: UITableViewCell {
     
     @IBOutlet weak var _sceneName: UILabel!
@@ -15,7 +16,7 @@ class  SceneSelectCellView: UITableViewCell {
     override func awakeFromNib() {
         self._sceneName.text = nil
     }
-    //! @brief シーン名設定
+    //! @brief セル表示するシーン名設定
     //! @param name シーン名
     public func setSceneName(name:String){
         self._sceneName.text = name

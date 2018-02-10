@@ -8,21 +8,31 @@
 
 import UIKit
 
+/// シーン選択画面のView(テーブルビューのProtocolをExtensionで実装)
 class ProtocolImplementationWithExtension : UIViewController {
     
+
     @IBOutlet var _tableView: UITableView!
     
+    /// シーン名
     fileprivate let _sceneNames = [
-        "Optional",
-        "Property"
+        "Property",
+        "Extension"
     ]
     
+    /// シーンID
+    fileprivate let _sceneID = [
+    "Property",
+    "Extension"
+    ]
+    
+    /// 画面読み込み完了時に行う初期化処理
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         self._tableView.delegate = self
         self._tableView.dataSource = self
-        self._tableView.allowsSelection = false
         self._tableView.rowHeight = UITableViewAutomaticDimension
         
         let nib = UINib(nibName: "SceneSelectCell", bundle: nil)
@@ -37,13 +47,15 @@ class ProtocolImplementationWithExtension : UIViewController {
     
 }
 
-/// ExtensionでのProtocol実装
+/// ExtensionでのProtocol実装(テーブルビューのDataSourceとDelegateを実装)
 extension ProtocolImplementationWithExtension : UITableViewDataSource, UITableViewDelegate {
     
+    /// 表示項目数
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self._sceneNames.count
     }
     
+    /// 表示するセルの情報
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath as IndexPath) as! SceneSelectCellView
@@ -53,13 +65,19 @@ extension ProtocolImplementationWithExtension : UITableViewDataSource, UITableVi
         return cell
     }
     
+    /// セルの表示サイズ
     func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat
     {
         return UITableViewAutomaticDimension
     }
     
+    /// セルタップの動作
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
+        
+        let scene = self.storyboard?.instantiateViewController(withIdentifier: self._sceneNames[indexPath.row])
+        self.navigationController?.pushViewController(scene!, animated: true)
+
     }
 }
 

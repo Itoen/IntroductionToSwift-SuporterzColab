@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -45,6 +46,89 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUh-K7-3rT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="364" y="-793"/>
+        </scene>
+        <!--Sample-->
+        <scene sceneID="rah-Fl-Tdl">
+            <objects>
+                <viewController storyboardIdentifier="Property" title="Sample" id="lDs-Ds-FZq" customClass="FirstSampleViewController" customModule="IntroductionSwift_SuporterzColab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gnx-PU-cKP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MwM-ST-VAw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlZ-Ly-uGQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <items>
+                                            <navigationItem title="Sample" id="auD-4w-mus"/>
+                                        </items>
+                                    </navigationBar>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="acX-D7-iHy">
+                                <rect key="frame" x="30" y="337" width="315" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iij-ub-QCw">
+                                <rect key="frame" x="30" y="144" width="315" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yx0-DU-lgN" firstAttribute="bottom" secondItem="acX-D7-iHy" secondAttribute="bottom" constant="300" id="089-Rg-mwL"/>
+                            <constraint firstItem="MwM-ST-VAw" firstAttribute="leading" secondItem="gnx-PU-cKP" secondAttribute="leading" id="5be-f3-z8P"/>
+                            <constraint firstItem="acX-D7-iHy" firstAttribute="leading" secondItem="yx0-DU-lgN" secondAttribute="leading" constant="30" id="Wjh-fq-ti0"/>
+                            <constraint firstItem="iij-ub-QCw" firstAttribute="top" secondItem="MwM-ST-VAw" secondAttribute="bottom" constant="100" id="YB5-oV-cnO"/>
+                            <constraint firstItem="iij-ub-QCw" firstAttribute="leading" secondItem="yx0-DU-lgN" secondAttribute="leading" constant="30" id="Ycz-zr-UEu"/>
+                            <constraint firstItem="MwM-ST-VAw" firstAttribute="top" secondItem="gnx-PU-cKP" secondAttribute="top" id="aOr-sG-ngs"/>
+                            <constraint firstItem="yx0-DU-lgN" firstAttribute="trailing" secondItem="iij-ub-QCw" secondAttribute="trailing" constant="30" id="bOa-6G-4ZB"/>
+                            <constraint firstItem="yx0-DU-lgN" firstAttribute="trailing" secondItem="acX-D7-iHy" secondAttribute="trailing" constant="30" id="gdz-dK-eKh"/>
+                            <constraint firstItem="MwM-ST-VAw" firstAttribute="centerX" secondItem="gnx-PU-cKP" secondAttribute="centerX" id="vhy-rg-srj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yx0-DU-lgN"/>
+                    </view>
+                    <connections>
+                        <outlet property="_inputField" destination="acX-D7-iHy" id="m6y-oO-nam"/>
+                        <outlet property="_label" destination="iij-ub-QCw" id="KpE-kH-ceJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pa4-q5-AXF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="-89"/>
+        </scene>
+        <!--Extension-->
+        <scene sceneID="Cb9-zH-zv2">
+            <objects>
+                <viewController storyboardIdentifier="Extension" title="Extension" id="nsP-91-GCU" customClass="SecondSampleViewController" customModule="IntroductionSwift_SuporterzColab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BRZ-Cf-Uzi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lt-1U-GoT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Extension" id="5oU-ei-bEa"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5lt-1U-GoT" firstAttribute="trailing" secondItem="czc-P3-fVI" secondAttribute="trailing" id="8V8-vI-Gnn"/>
+                            <constraint firstItem="5lt-1U-GoT" firstAttribute="top" secondItem="BRZ-Cf-Uzi" secondAttribute="top" id="Igd-zf-D7D"/>
+                            <constraint firstItem="5lt-1U-GoT" firstAttribute="leading" secondItem="czc-P3-fVI" secondAttribute="leading" id="MGh-mL-AHz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="czc-P3-fVI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RLu-2N-UtM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1129" y="-90"/>
         </scene>
     </scenes>
 </document>
