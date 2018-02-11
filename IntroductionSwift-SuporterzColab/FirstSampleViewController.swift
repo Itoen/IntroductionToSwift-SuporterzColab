@@ -28,9 +28,6 @@ class FirstSampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        // 入力フィールド変更時コールバックの設定
-        self._inputField.addTarget(self, action: #selector(FirstSampleViewController.onChangeInputField(field:)), for: .editingChanged)
     }
     
     override func didReceiveMemoryWarning() {
@@ -60,14 +57,18 @@ class FirstSampleViewController: UIViewController {
     }
 
     // 入力内容変更時処理
-    @objc func onChangeInputField(field :UITextField)
-    {
-        if let text = field.text {
+    @IBAction func onChageInputField(_ sender: UITextField) {
+        if let text = sender.text {
             if let inputNum = Int(text) {
                 self.num = inputNum
                 return
             }
         }
         self.num = 0
+    }
+    
+    // スクリーンタップ時処理
+    @IBAction func onTapScreen(_ sender: Any) {
+        self.view.endEditing(true)
     }
 }

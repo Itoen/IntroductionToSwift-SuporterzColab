@@ -22,7 +22,7 @@ class ProtocolImplementationWithExtension : UIViewController {
     
     /// シーンID
     fileprivate let _sceneID = [
-    "FirstSample",
+    "FirstSmaple",
     "SecondSample",
     ]
     
