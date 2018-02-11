@@ -50,7 +50,7 @@
         <!--Sample-->
         <scene sceneID="rah-Fl-Tdl">
             <objects>
-                <viewController storyboardIdentifier="Property" title="Sample" id="lDs-Ds-FZq" customClass="FirstSampleViewController" customModule="IntroductionSwift_SuporterzColab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstSmaple" title="Sample" id="lDs-Ds-FZq" customClass="FirstSampleViewController" customModule="IntroductionSwift_SuporterzColab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gnx-PU-cKP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,7 +61,7 @@
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlZ-Ly-uGQ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <items>
-                                            <navigationItem title="Sample" id="auD-4w-mus"/>
+                                            <navigationItem title="Sample 1" id="auD-4w-mus"/>
                                         </items>
                                     </navigationBar>
                                 </subviews>
@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="364" y="-89"/>
         </scene>
-        <!--Extension-->
+        <!--SecondSample-->
         <scene sceneID="Cb9-zH-zv2">
             <objects>
-                <viewController storyboardIdentifier="Extension" title="Extension" id="nsP-91-GCU" customClass="SecondSampleViewController" customModule="IntroductionSwift_SuporterzColab" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SecondSample" title="SecondSample" id="nsP-91-GCU" customClass="SecondSampleViewController" customModule="IntroductionSwift_SuporterzColab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BRZ-Cf-Uzi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +113,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5lt-1U-GoT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Extension" id="5oU-ei-bEa"/>
+                                    <navigationItem title="Sample 2" id="5oU-ei-bEa"/>
                                 </items>
                             </navigationBar>
                         </subviews>

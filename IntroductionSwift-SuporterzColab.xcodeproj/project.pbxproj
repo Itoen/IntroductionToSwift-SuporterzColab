@@ -16,6 +16,7 @@
 		D4232B43202E04680053546C /* SecondSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4232B42202E04680053546C /* SecondSampleViewController.swift */; };
 		D47D35A92026216C00607B0D /* SceneSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D47D35A82026216C00607B0D /* SceneSelectCell.xib */; };
 		D47D35AD202623AF00607B0D /* SceneSelectCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47D35AC202623AF00607B0D /* SceneSelectCellView.swift */; };
+		D488337F202FF893004460C9 /* CharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D488337E202FF893004460C9 /* CharacterStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		D4232B42202E04680053546C /* SecondSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSampleViewController.swift; sourceTree = "<group>"; };
 		D47D35A82026216C00607B0D /* SceneSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SceneSelectCell.xib; sourceTree = "<group>"; };
 		D47D35AC202623AF00607B0D /* SceneSelectCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneSelectCellView.swift; sourceTree = "<group>"; };
+		D488337E202FF893004460C9 /* CharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				D47D35A82026216C00607B0D /* SceneSelectCell.xib */,
 				D4232B40202E04010053546C /* FirstSampleViewController.swift */,
 				D4232B42202E04680053546C /* SecondSampleViewController.swift */,
+				D488337E202FF893004460C9 /* CharacterStatus.swift */,
 				D47D35AC202623AF00607B0D /* SceneSelectCellView.swift */,
 				D41E58862025CF5200D70A10 /* Main.storyboard */,
 				D41E58892025CF5200D70A10 /* Assets.xcassets */,
@@ -152,6 +155,7 @@
 				D4232B41202E04010053546C /* FirstSampleViewController.swift in Sources */,
 				D4232B43202E04680053546C /* SecondSampleViewController.swift in Sources */,
 				D41E58972025DBC700D70A10 /* ProtocolImplementationwithExtension.swift in Sources */,
+				D488337F202FF893004460C9 /* CharacterStatus.swift in Sources */,
 				D47D35AD202623AF00607B0D /* SceneSelectCellView.swift in Sources */,
 				D41E58832025CF5200D70A10 /* AppDelegate.swift in Sources */,
 			);

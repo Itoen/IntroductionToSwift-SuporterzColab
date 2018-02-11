@@ -16,14 +16,14 @@ class ProtocolImplementationWithExtension : UIViewController {
     
     /// シーン名
     fileprivate let _sceneNames = [
-        "Property",
-        "Extension"
+        "Sample 1",
+        "Sample 2",
     ]
     
     /// シーンID
     fileprivate let _sceneID = [
-    "Property",
-    "Extension"
+    "FirstSample",
+    "SecondSample",
     ]
     
     /// 画面読み込み完了時に行う初期化処理
@@ -75,7 +75,7 @@ extension ProtocolImplementationWithExtension : UITableViewDataSource, UITableVi
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath as IndexPath, animated: true)
         
-        let scene = self.storyboard?.instantiateViewController(withIdentifier: self._sceneNames[indexPath.row])
+        let scene = self.storyboard?.instantiateViewController(withIdentifier: self._sceneID[indexPath.row])
         self.navigationController?.pushViewController(scene!, animated: true)
 
     }
