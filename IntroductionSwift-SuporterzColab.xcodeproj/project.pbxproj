@@ -20,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D40BBB4D2033139D0011F739 /* SuporterzColab.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SuporterzColab.playground; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		D41E587F2025CF5200D70A10 /* IntroductionSwift-SuporterzColab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IntroductionSwift-SuporterzColab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41E58822025CF5200D70A10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D41E58872025CF5200D70A10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		D41E58812025CF5200D70A10 /* IntroductionSwift-SuporterzColab */ = {
 			isa = PBXGroup;
 			children = (
+				D40BBB4D2033139D0011F739 /* SuporterzColab.playground */,
 				D41E58822025CF5200D70A10 /* AppDelegate.swift */,
 				D41E58962025DBC700D70A10 /* ProtocolImplementationwithExtension.swift */,
 				D47D35A82026216C00607B0D /* SceneSelectCell.xib */,
